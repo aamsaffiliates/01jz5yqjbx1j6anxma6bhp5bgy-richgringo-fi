@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Gringo Casino - 200% Bonus Jopa €1,300 Asti | Parhaat Kolikkopelit</title>
+    <meta name="description" content="Rich Gringo Casino tarjoaa 200% bonuksen jopa €1,300 asti! Pelaa parhaita kolikkopelejä, live-kasinoa ja jackpot-pelejä. Liity nyt ja aloita voittaminen!">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Rich Gringo Casino - 200% Bonus Jopa €1,300 Asti">
+    <meta property="og:description" content="Suomen paras online-kasino wild west -teemalla. Pelaa Book of Dead, Sweet Bonanza ja satoja muita pelejä!">
+    <meta property="og:image" content="https://richgringo.fiimages/hero.png">
+    <meta property="og:url" content="https://richgringo.fi">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#c81248',
+                        secondary: '#1e3a8a',
+                        dark: '#0f172a'
+                    },
+                    fontFamily: {
+                        'western': ['Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-white overflow-x-hidden">
+    <!-- Floating Wild West Emojis -->
+    <div class="floating-emojis">
+        <span class="emoji" style="--delay: 0s;">🤠</span>
+        <span class="emoji" style="--delay: 2s;">🎰</span>
+        <span class="emoji" style="--delay: 4s;">💰</span>
+        <span class="emoji" style="--delay: 6s;">🃏</span>
+        <span class="emoji" style="--delay: 8s;">🎲</span>
+        <span class="emoji" style="--delay: 10s;">⭐</span>
+        <span class="emoji" style="--delay: 12s;">🔥</span>
+        <span class="emoji" style="--delay: 14s;">💎</span>
+    </div>
+
+    <!-- Animated Lights Background -->
+    <div class="spotlight-container">
+        <div class="spotlight spotlight-1"></div>
+        <div class="spotlight spotlight-2"></div>
+        <div class="spotlight spotlight-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-dark/90 backdrop-blur-md border-b border-primary/20 mx-4 mt-4 rounded-2xl">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="logo-container">
+                    <h1 class="text-3xl font-bold text-primary font-western text-shadow-glow">
+                        RICH <span class="text-white">GRINGO</span>
+                    </h1>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#hero" class="nav-link">Koti</a>
+                    <a href="#games" class="nav-link">Pelit</a>
+                    <a href="#bonuses" class="nav-link">Bonukset</a>
+                    <a href="#about" class="nav-link">Tietoa</a>
+                    <a href="#support" class="nav-link">Tuki</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button onclick="redirectToRegister()" class="btn-secondary">Kirjaudu</button>
+                    <button onclick="redirectToRegister()" class="btn-primary pulse-animation">Liity Nyt</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-12 parallax-bg">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <!-- Bonus Display Box -->
+                    <div class="bonus-box mb-8 animate-float">
+                        <div class="flex items-center justify-center mb-4">
+                            <i class="fas fa-star text-yellow-400 text-2xl pulse-animation"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-primary mb-2">Tervetuliaisbonu</h2>
+                        <div class="text-4xl font-bold text-white mb-4 text-shadow-glow">
+                            200% JOPA <span class="text-primary">€1,300</span>
+                        </div>
+                        <p class="text-gray-300 text-sm">Vähimmäistalletus €20</p>
+                    </div>
+                    
+                    <!-- Main Title -->
+                    <h1 class="text-5xl lg:text-7xl font-bold mb-6 text-shadow-3d font-western">
+                        RICH GRINGO<br>
+                        <span class="text-primary">CASINO</span>
+                    </h1>
+                    
+                    <p class="text-xl text-gray-300 mb-8 max-w-lg">
+                        Suomen villin lännen kasino tarjoaa parhaat kolikkopelit, live-kasinon ja jackpot-pelit. Aloita seikkailusi nyt!
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button onclick="redirectToRegister()" class="btn-primary-large hover-transform">
+                            <i class="fas fa-rocket mr-2"></i>
+                            Aloita Pelaaminen
+                        </button>
+                        <button onclick="redirectToRegister()" class="btn-secondary-large hover-transform">
+                            <i class="fas fa-gift mr-2"></i>
+                            Lunasta Bonus
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="relative">
+                    <div class="hero-image-container animate-float-slow">
+                        <img src="images/hero" alt="Rich Gringo Casino Cowboy" class="w-full h-auto rounded-3xl shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/50 to-transparent rounded-3xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Claim Bonus -->
+    <section class="py-20 bg-gradient-to-b from-dark to-secondary/20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-shadow-glow font-western">
+                Kuinka Lunastaa <span class="text-primary">Bonus</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="step-card card-entrance" style="--delay: 0.1s;">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">1. Rekisteröidy</h3>
+                    <p class="text-gray-300">Luo tilisi Rich Gringo Casinoon muutamassa sekunnissa</p>
+                </div>
+                
+                <div class="step-card card-entrance" style="--delay: 0.2s;">
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">2. Talleta</h3>
+                    <p class="text-gray-300">Tee vähintään €20 talletus valitsemallasi maksutavalla</p>
+                </div>
+                
+                <div class="step-card card-entrance" style="--delay: 0.3s;">
+                    <div class="step-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">3. Aktivoi</h3>
+                    <p class="text-gray-300">Bonuksesi aktivoituu automaattisesti ensimmäisen talletuksen yhteydessä</p>
+                </div>
+                
+                <div class="step-card card-entrance" style="--delay: 0.4s;">
+                    <div class="step-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">4. Pelaa</h3>
+                    <p class="text-gray-300">Aloita pelaaminen ja nauti bonusrahastasi!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gringo's Picks -->
+    <section id="games" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4 text-shadow-glow font-western">
+                Gringon <span class="text-primary">Suosikit</span>
+            </h2>
+            <p class="text-center text-gray-300 mb-12">Parhaat ja suosituimmat kolikkopelit</p>
+            
+            <!-- Game Search -->
+            <div class="max-w-md mx-auto mb-12">
+                <div class="relative">
+                    <input type="text" placeholder="Etsi pelejä..." class="game-search-input">
+                    <i class="fas fa-search absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </div>
+            
+            <!-- Games Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="game-card hover-transform">
+                    <div class="game-image-container">
+                        <img src="images/book_of_dead.webp" alt="Book of Dead" class="game-image">
+                        <div class="game-overlay">
+                            <button onclick="redirectToRegister()" class="btn-play">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="game-title">Book of Dead</h3>
+                </div>
+                
+                <div class="game-card hover-transform">
+                    <div class="game-image-container">
+                        <img src="images/ripcity.webp" alt="RipCity" class="game-image">
+                        <div class="game-overlay">
+                            <button onclick="redirectToRegister()" class="btn-play">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="game-title">RipCity</h3>
+                </div>
+                
+                <div class="game-card hover-transform">
+                    <div class="game-image-container">
+                        <img src="images/lebandit.webp" alt="Sweet Bonanza" class="game-image">
+                        <div class="game-overlay">
+                            <button onclick="redirectToRegister()" class="btn-play">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="game-title">Sweet Bonanza</h3>
+                </div>
+                
+                <div class="game-card hover-transform">
+                    <div class="game-image-container">
+                        <img src="images/stormforget.webp" alt="Thunderkick" class="game-image">
+                        <div class="game-overlay">
+                            <button onclick="redirectToRegister()" class="btn-play">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="game-title">Thunderkick</h3>
+                </div>
+                
+                <div class="game-card hover-transform">
+                    <div class="game-image-container">
+                        <img src="images/sugar_rush1000.webp" alt="Sugar Rush 1000" class="game-image">
+                        <div class="game-overlay">
+                            <button onclick="redirectToRegister()" class="btn-play">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="game-title">Sugar Rush 1000</h3>
+                </div>
+                
+                <div class="game-card hover-transform">
+                    <div class="game-image-container">
+                        <img src="images/zezeus.webp" alt="Mega Joker" class="game-image">
+                        <div class="game-overlay">
+                            <button onclick="redirectToRegister()" class="btn-play">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="game-title">Mega Joker</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Portfolio Stats -->
+    <section class="py-20 bg-gradient-to-b from-secondary/20 to-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-shadow-glow font-western">
+                Pelivalikoima
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
+                <div class="stat-card">
+                    <div class="stat-number">247</div>
+                    <div class="stat-label">Megaways</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">156</div>
+                    <div class="stat-label">Cluster Pays</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">89</div>
+                    <div class="stat-label">Pöytäpelit</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">134</div>
+                    <div class="stat-label">Crash Pelit</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">67</div>
+                    <div class="stat-label">Live Dealer</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">298</div>
+                    <div class="stat-label">Jackpotit</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">112</div>
+                    <div class="stat-label">UK Exclusive</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Providers -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-shadow-glow">Pelintarjoajat</h2>
+            
+            <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-4">
+                <div class="provider-card">NetEnt</div>
+                <div class="provider-card">Microgaming</div>
+                <div class="provider-card">Play'n GO</div>
+                <div class="provider-card">Pragmatic Play</div>
+                <div class="provider-card">Evolution</div>
+                <div class="provider-card">Yggdrasil</div>
+                <div class="provider-card">Big Time Gaming</div>
+                <div class="provider-card">Thunderkick</div>
+                <div class="provider-card">Quickspin</div>
+                <div class="provider-card">Red Tiger</div>
+                <div class="provider-card">Push Gaming</div>
+                <div class="provider-card">Nolimit City</div>
+                <div class="provider-card">Hacksaw Gaming</div>
+                <div class="provider-card">Relax Gaming</div>
+                <div class="provider-card">Blueprint</div>
+                <div class="provider-card">ELK Studios</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-dark to-secondary/20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-shadow-glow font-western">
+                    Tietoa <span class="text-primary">Rich Gringo Casinosta</span>
+                </h2>
+                
+                <div class="prose prose-lg text-gray-300 leading-relaxed">
+                    <p class="mb-6">
+                        Rich Gringo Casino on Suomen johtava online-kasino, joka tarjoaa ainutlaatuisen wild west -kokemuksen pelaajilleen. Vuonna 2023 perustettu kasino on nopeasti noussut suomalaisten pelaajien suosikiksi tarjoamalla laajan valikoiman kolikkopelejä, live-kasinopelejä ja jackpot-pelejä.
+                    </p>
+                    
+                    <p class="mb-6">
+                        RichGringo Casino toimii Anjouan Gaming -lisenssillä, mikä takaa turvallisen ja reilun peliympäristön kaikille pelaajille. Kasino käyttää uusinta SSL-salaustekniikkaa suojatakseen pelaajien henkilötiedot ja rahatransaktiot. Kaikki pelit on testattu riippumattomien tahojen toimesta reiluuden varmistamiseksi.
+                    </p>
+                    
+                    <p class="mb-6">
+                        Rich Gringo Casinon pelivalikoima sisältää yli 1200 peliä maailman johtavilta pelintarjoajilta. Pelaajat voivat nauttia klassisista kolikkopeleistä, modernista Megaways-teknologiasta, jännittävistä live-kasinopeleistä sekä progressiivisista jackpot-peleistä. Kasino päivittää pelivalikoimaansa säännöllisesti, joten uusia pelejä ilmestyy jatkuvasti.
+                    </p>
+                    
+                    <p class="mb-6">
+                        Asiakaspalvelu on saatavilla 24/7 suomeksi live-chatin, sähköpostin ja puhelimen kautta. Kokenut asiakaspalvelutiimi auttaa kaikissa kysymyksissä ja ongelmissa nopeasti ja ammattitaitoisesti. RichGringo Casino arvostaa vastuullista pelaamista ja tarjoaa työkaluja pelaajille pelaamisen hallintaan.
+                    </p>
+                    
+                    <p>
+                        Liity Rich Gringo Casino -yhteisöön tänään ja koe wild west -seikkailu parhaimmillaan. Tervetuliaisbonuksemme 200% jopa €1,300 asti antaa sinulle erinomaisen alun peliurallesi. Muista pelata vastuullisesti ja nauttia pelaamisesta!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-shadow-glow font-western">
+                Maksutavat
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="payment-table">
+                        <h3 class="text-2xl font-bold mb-6 text-primary">Talletukset</h3>
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-600">
+                                    <th class="text-left py-3">Maksutapa</th>
+                                    <th class="text-left py-3">Min/Max</th>
+                                    <th class="text-left py-3">Aika</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Pay'n'Play</td>
+                                    <td class="py-3">€20 / €5,000</td>
+                                    <td class="py-3">Välitön</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Pankkisiirto</td>
+                                    <td class="py-3">€20 / €10,000</td>
+                                    <td class="py-3">Välitön</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Visa/Mastercard</td>
+                                    <td class="py-3">€20 / €3,000</td>
+                                    <td class="py-3">Välitön</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Trustly</td>
+                                    <td class="py-3">€20 / €5,000</td>
+                                    <td class="py-3">Välitön</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="payment-table">
+                        <h3 class="text-2xl font-bold mb-6 text-primary">Nostot</h3>
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-gray-600">
+                                    <th class="text-left py-3">Maksutapa</th>
+                                    <th class="text-left py-3">Min/Max</th>
+                                    <th class="text-left py-3">Aika</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Pankkisiirto</td>
+                                    <td class="py-3">€20 / €5,000</td>
+                                    <td class="py-3">1-3 päivää</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Trustly</td>
+                                    <td class="py-3">€20 / €3,000</td>
+                                    <td class="py-3">0-24h</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Visa/Mastercard</td>
+                                    <td class="py-3">€20 / €2,000</td>
+                                    <td class="py-3">3-5 päivää</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">E-lompakot</td>
+                                    <td class="py-3">€20 / €1,000</td>
+                                    <td class="py-3">0-24h</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="prose prose-lg text-gray-300">
+                    <p class="mb-4">
+                        Rich Gringo Casino tarjoaa laajan valikoiman turvallisia ja nopeita maksutapoja suomalaisille pelaajille. Pay'n'Play -teknologia mahdollistaa välittömän rekisteröitymisen ja pelaamisen aloittamisen ilman erillistä tilin luomista. Pankkisiirrot toimivat suoraan suomalaisista pankeista, ja kaikki transaktiot on suojattu pankkitason salauksella.
+                    </p>
+                    
+                    <p class="mb-4">
+                        Trustly on suosittu vaihtoehto nopeisiin nostoihin, sillä rahat siirtyvät tilillesi yleensä muutamassa tunnissa. Kaikki maksutavat ovat ilmaisia pelaajalle, eikä RichGringo Casino veloita ylimääräisiä maksuja talletuksista tai nostoista. Nostopyyntöjen käsittelyaika on yleensä alle 24 tuntia arkipäivisin.
+                    </p>
+                    
+                    <p>
+                        Turvallisuus on meille ensisijaisen tärkeää. Kaikki maksutiedot käsitellään SSL-salatulla yhteydellä, ja noudatamme tiukkoja PCI DSS -standardeja. Henkilöllisyyden vahvistus vaaditaan ensimmäisen noston yhteydessä EU:n rahanpesun vastaisten säädösten mukaisesti.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & VIP -->
+    <section class="py-20 bg-gradient-to-b from-secondary/20 to-dark">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Security -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 text-shadow-glow font-western">
+                        <i class="fas fa-shield-alt text-primary mr-3"></i>
+                        Turvallisuus
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <div class="security-feature">
+                            <i class="fas fa-lock text-primary"></i>
+                            <div>
+                                <h3 class="font-bold">SSL-salaus</h3>
+                                <p class="text-gray-300">256-bittinen SSL-salaus suojaa kaikki tiedot</p>
+                            </div>
+                        </div>
+                        
+                        <div class="security-feature">
+                            <i class="fas fa-certificate text-primary"></i>
+                            <div>
+                                <h3 class="font-bold">Anjouan Gaming Lisenssi</h3>
+                                <p class="text-gray-300">Virallinen pelilisenssi takaa reilun pelaamisen</p>
+                            </div>
+                        </div>
+                        
+                        <div class="security-feature">
+                            <i class="fas fa-random text-primary"></i>
+                            <div>
+                                <h3 class="font-bold">RNG-testattu</h3>
+                                <p class="text-gray-300">Kaikki pelit testattu riippumattomien tahojen toimesta</p>
+                            </div>
+                        </div>
+                        
+                        <div class="security-feature">
+                            <i class="fas fa-user-shield text-primary"></i>
+                            <div>
+                                <h3 class="font-bold">Vastuullinen pelaaminen</h3>
+                                <p class="text-gray-300">Työkalut pelaamisen hallintaan ja rajoittamiseen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- VIP Program -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 text-shadow-glow font-western">
+                        <i class="fas fa-crown text-primary mr-3"></i>
+                        VIP-ohjelma
+                    </h2>
+                    
+                    <div class="vip-levels space-y-4 mb-8">
+                        <div class="vip-level">
+                            <div class="vip-badge bronze">Pronssi</div>
+                            <div class="vip-benefits">
+                                <span>5% cashback</span>
+                                <span>Viikkobonus</span>
+                            </div>
+                        </div>
+                        
+                        <div class="vip-level">
+                            <div class="vip-badge silver">Hopea</div>
+                            <div class="vip-benefits">
+                                <span>8% cashback</span>
+                                <span>Henkilökohtainen tuki</span>
+                            </div>
+                        </div>
+                        
+                        <div class="vip-level">
+                            <div class="vip-badge gold">Kulta</div>
+                            <div class="vip-benefits">
+                                <span>12% cashback</span>
+                                <span>Eksklusiiviset bonukset</span>
+                            </div>
+                        </div>
+                        
+                        <div class="vip-level">
+                            <div class="vip-badge diamond">Timantti</div>
+                            <div class="vip-benefits">
+                                <span>15% cashback</span>
+                                <span>VIP-tapahtumat</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="prose prose-sm text-gray-300">
+                        <p class="mb-4">
+                            Rich Gringo Casino VIP-ohjelma palkitsee uskollisimmat pelaajamme eksklusiivisilla eduilla ja henkilökohtaisella palvelulla. Jokainen panos kerää VIP-pisteitä, jotka nostavat tasoasi automaattisesti.
+                        </p>
+                        
+                        <p class="mb-4">
+                            VIP-jäsenet nauttivat korkeammista cashback-prosenteista, nopeammista nostoista, henkilökohtaisesta VIP-managerista sekä kutsusta eksklusiivisiin turnauksiin ja tapahtumiin. Mitä korkeampi tasosi, sitä paremmat edut.
+                        </p>
+                        
+                        <p>
+                            Liity VIP-ohjelmaan tänään ja aloita matkasi kohti eksklusiivisia etuja. VIP-statuksesi säilyy aktiivisena niin kauan kuin pelaat säännöllisesti RichGringo Casinossa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Review -->
+    <section id="bonuses" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-shadow-glow font-western">
+                Bonukset ja <span class="text-primary">Tarjoukset</span>
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="prose prose-lg text-gray-300 mb-12">
+                    <p class="mb-6">
+                        Rich Gringo Casino tarjoaa markkinoiden parhaat bonukset ja kampanjat suomalaisille pelaajille. Tervetuliaisbonuksemme 200% jopa €1,300 asti on yksi alan kilpailukykyisimmistä, ja se aktivoituu automaattisesti ensimmäisen €20 talletuksen yhteydessä.
+                    </p>
+                    
+                    <p class="mb-6">
+                        Bonusehtojen kierrätysvaatimus on 35x bonussummalle, mikä on alan keskitasoa. Kierrätys tulee suorittaa 30 päivän sisällä bonuksen aktivoinnista. Kaikki kolikkopelit laskevat 100% kierrätykseen, kun taas pöytäpelit ja live-kasinon pelit laskevat 10%.
+                    </p>
+                    
+                    <p class="mb-8">
+                        Säännölliset pelaajat voivat nauttia viikoittaisista reload-bonuksista, cashback-tarjouksista sekä eksklusiivisista turnausmahdollisuuksista. VIP-pelaajat saavat henkilökohtaisia bonustarjouksia ja korkeampia cashback-prosentteja.
+                    </p>
+                </div>
+                
+                <div class="bonus-table bg-secondary/20 rounded-2xl p-8 mb-8">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Bonusehdot</h3>
+                    
+                    <table class="w-full mb-6">
+                        <tbody>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-3 font-semibold">Tervetuliaisbonu</td>
+                                <td class="py-3">200% jopa €1,300</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-3 font-semibold">Vähimmäistalletus</td>
+                                <td class="py-3">€20</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-3 font-semibold">Kierrätysvaatimus</td>
+                                <td class="py-3">35x bonussumma</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-3 font-semibold">Kierrätysaika</td>
+                                <td class="py-3">30 päivää</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-3 font-semibold">Maksimi panos</td>
+                                <td class="py-3">€5 per kierros</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 font-semibold">Maksimi voitto</td>
+                                <td class="py-3">Ei rajoitusta</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>• Bonus aktivoituu automaattisesti ensimmäisen talletuksen yhteydessä</li>
+                        <li>• Kolikkopelit laskevat 100% kierrätykseen</li>
+                        <li>• Pöytäpelit ja live-kasino laskevat 10% kierrätykseen</li>
+                        <li>• Jackpot-pelit eivät laske kierrätykseen</li>
+                        <li>• Bonusrahoja ei voi nostaa ennen kierrätysvaatimuksen täyttämistä</li>
+                        <li>• Bonusehdot voivat muuttua ilman erillistä ilmoitusta</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-primary/10 border border-primary/30 rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-exclamation-triangle text-primary text-xl mr-3"></i>
+                        <h4 class="text-lg font-bold">Vastuullinen pelaaminen</h4>
+                    </div>
+                    <p class="text-sm text-gray-300">
+                        Muista pelata vastuullisesti. Aseta itsellesi rajat ja pidä kiinni niistä. Pelaamisen tulee olla hauskaa, ei taloudellista taakkaa. Jos koet pelaamisen olevan ongelma, ota yhteyttä asiakaspalveluumme tai käytä vastuullisen pelaamisen työkalujamme.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Promotions -->
+    <section class="py-20 bg-gradient-to-b from-dark to-secondary/20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-shadow-glow">Muut Kampanjat</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="promo-card">
+                    <div class="promo-icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Viikoittainen Reload</h3>
+                    <p class="text-gray-300 mb-4">Saa 50% bonus joka maanantai jopa €200 asti. Vähimmäistalletus €30.</p>
+                    <button onclick="redirectToRegister()" class="btn-secondary-small">Lunasta</button>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="promo-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Cashback Torstai</h3>
+                    <p class="text-gray-300 mb-4">Saa 10% cashback viikon tappioistasi joka torstai. Maksimi €100.</p>
+                    <button onclick="redirectToRegister()" class="btn-secondary-small">Osallistu</button>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="promo-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Kuukausiturnaus</h3>
+                    <p class="text-gray-300 mb-4">Kilpaile muita pelaajia vastaan €10,000 palkintopotista joka kuukausi.</p>
+                    <button onclick="redirectToRegister()" class="btn-secondary-small">Liity</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center gap-8">
+                <div class="trust-badge">
+                    <i class="fas fa-certificate text-3xl text-primary mb-2"></i>
+                    <div class="text-sm font-semibold">Anjouan Gaming</div>
+                    <div class="text-xs text-gray-400">Virallinen Lisenssi</div>
+                </div>
+                
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt text-3xl text-green-400 mb-2"></i>
+                    <div class="text-sm font-semibold">SSL Suojattu</div>
+                    <div class="text-xs text-gray-400">256-bit Salaus</div>
+                </div>
+                
+                <div class="trust-badge">
+                    <i class="fas fa-user-shield text-3xl text-blue-400 mb-2"></i>
+                    <div class="text-sm font-semibold">18+ Pelaaminen</div>
+                    <div class="text-xs text-gray-400">Vastuullisesti</div>
+                </div>
+                
+                <div class="trust-badge">
+                    <i class="fas fa-random text-3xl text-yellow-400 mb-2"></i>
+                    <div class="text-sm font-semibold">RNG Testattu</div>
+                    <div class="text-xs text-gray-400">Reilu Pelaaminen</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-gradient-to-b from-secondary/20 to-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-shadow-glow font-western">
+                Usein Kysytyt <span class="text-primary">Kysymykset</span>
+            </h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Kuinka nopeasti voin nostaa voittoni?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nostot käsitellään yleensä 0-24 tunnin sisällä arkipäivisin. Trustly-nostot ovat nopeimpia ja rahat siirtyvät tilillesi muutamassa tunnissa. Pankkisiirrot voivat kestää 1-3 arkipäivää.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Onko Rich Gringo Casino turvallinen?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Kyllä, Rich Gringo Casino toimii Anjouan Gaming -lisenssillä ja käyttää 256-bittistä SSL-salausta. Kaikki pelit on testattu riippumattomien tahojen toimesta reiluuden varmistamiseksi.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Mitä bonusehtoja tervetuliaisbonuksessa on?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Tervetuliaisbonuksen kierrätysvaatimus on 35x bonussummalle ja se tulee kierrättää 30 päivän sisällä. Vähimmäistalletus on €20 ja maksimi panos bonusrahalla €5 per kierros.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Voinko pelata mobiililaitteella?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Kyllä, Rich Gringo Casino on täysin optimoitu mobiililaitteille. Voit pelata kaikkia pelejä suoraan selaimessa ilman erillistä sovellusta iPhone, Android tai tablet -laitteella.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Support -->
+    <section id="support" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-shadow-glow">Asiakaspalvelu</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Live Chat</h3>
+                    <p class="text-gray-300 mb-4">24/7 suomenkielinen tuki</p>
+                    <button onclick="redirectToRegister()" class="btn-secondary-small">Aloita Chat</button>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sähköposti</h3>
+                    <p class="text-gray-300 mb-4">support@richgringo.fi</p>
+                    <p class="text-sm text-gray-400">Vastaus 2-4 tunnissa</p>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Puhelin</h3>
+                    <p class="text-gray-300 mb-4">+358 9 123 4567</p>
+                    <p class="text-sm text-gray-400">Ma-Pe 9-21, La-Su 12-18</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary/30 border-t border-primary/20 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary font-western mb-4">RICH GRINGO</h3>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Suomen paras wild west -kasino. Pelaa vastuullisesti ja nauti pelaamisesta!
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Pelit</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-primary transition-colors">Kolikkopelit</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Live Casino</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Jackpotit</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Pöytäpelit</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Tuki</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-primary transition-colors">Asiakaspalvelu</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Maksutavat</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Bonusehdot</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Vastuullinen Pelaaminen</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-primary transition-colors">Pelirajat</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Itsesulku</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Peliriippuvuus</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Tukiorganisaatiot</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-sm text-gray-400 mb-4 md:mb-0">
+                        <p class="mb-2">
+                            <i class="fas fa-exclamation-triangle text-primary mr-2"></i>
+                            Pelaaminen voi olla riippuvuutta aiheuttavaa. Pelaa vastuullisesti. 18+
+                        </p>
+                        <p>© 2024 Rich Gringo Casino. Kaikki oikeudet pidätetään.</p>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4">
+                        <button onclick="redirectToRegister()" class="text-sm text-gray-400 hover:text-primary transition-colors">
+                            Kirjaudu sisään
+                        </button>
+                        <span class="text-gray-600">|</span>
+                        <a href="#" class="text-sm text-gray-400 hover:text-primary transition-colors">
+                            Käyttöehdot
+                        </a>
+                        <span class="text-gray-600">|</span>
+                        <a href="#" class="text-sm text-gray-400 hover:text-primary transition-colors">
+                            Tietosuoja
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

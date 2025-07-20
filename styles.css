@@ -1,0 +1,289 @@
+/* Custom CSS for Rich Gringo Casino */
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    min-height: 100vh;
+}
+
+/* Text Effects */
+.text-shadow-glow {
+    text-shadow: 0 0 20px rgba(200, 18, 72, 0.5), 0 0 40px rgba(200, 18, 72, 0.3);
+}
+
+.text-shadow-3d {
+    text-shadow: 
+        2px 2px 0px #000,
+        4px 4px 0px rgba(0,0,0,0.5),
+        0 0 30px rgba(200, 18, 72, 0.8);
+}
+
+/* Floating Emojis Animation */
+.floating-emojis {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.emoji {
+    position: absolute;
+    font-size: 2rem;
+    animation: float 15s infinite linear;
+    animation-delay: var(--delay);
+    opacity: 0.7;
+}
+
+.emoji:nth-child(1) { left: 10%; }
+.emoji:nth-child(2) { left: 20%; }
+.emoji:nth-child(3) { left: 30%; }
+.emoji:nth-child(4) { left: 40%; }
+.emoji:nth-child(5) { left: 60%; }
+.emoji:nth-child(6) { left: 70%; }
+.emoji:nth-child(7) { left: 80%; }
+.emoji:nth-child(8) { left: 90%; }
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Spotlight Animation */
+.spotlight-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.spotlight {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200, 18, 72, 0.1) 0%, transparent 70%);
+    animation: spotlight 20s infinite linear;
+}
+
+.spotlight-1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.spotlight-2 {
+    top: 60%;
+    right: 10%;
+    animation-delay: 7s;
+}
+
+.spotlight-3 {
+    bottom: 20%;
+    left: 50%;
+    animation-delay: 14s;
+}
+
+@keyframes spotlight {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translate(100px, -50px) scale(1.5);
+        opacity: 0.6;
+    }
+}
+
+/* Navigation */
+.nav-link {
+    position: relative;
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #c81248;
+    transform: translateY(-2px);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #c81248;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #c81248 0%, #e11d48 100%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: 2px solid #c81248;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(200, 18, 72, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(200, 18, 72, 0.5);
+    background: linear-gradient(135deg, #e11d48 0%, #c81248 100%);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #e2e8f0;
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: 2px solid #475569;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    border-color: #c81248;
+    color: #c81248;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(200, 18, 72, 0.2);
+}
+
+.btn-primary-large {
+    background: linear-gradient(135deg, #c81248 0%, #e11d48 100%);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 30px;
+    border: 2px solid #c81248;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(200, 18, 72, 0.4);
+}
+
+.btn-secondary-large {
+    background: transparent;
+    color: #e2e8f0;
+    padding: 16px 32px;
+    border-radius: 30px;
+    border: 2px solid #475569;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary-small {
+    background: transparent;
+    color: #e2e8f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 2px solid #475569;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn-play {
+    background: rgba(200, 18, 72, 0.9);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-play:hover {
+    background: #c81248;
+    transform: scale(1.1);
+}
+
+/* Animations */
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.animate-float {
+    animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+    animation: floatSlow 8s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
